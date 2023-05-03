@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Product</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>New Product</h1>
+        <form id="form" action="http://localhost:8080/product" method="post">
+            <div>
+                <label for="codigo">Codigo:</label>
+                <input type="text" name="codigo" id="codigo" class="form-control">
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control">
+            </div>
+            <div>
+                <label for="descricao">Descricao:</label>
+                <input type="text" name="descricao" id="descricao" class="form-control">
+            </div>
+            <div>
+                <label for="precoUnitario">Preço Unitario:</label>
+                <input type="number" name="precoUnitario" id="precoUnitario" class="form-control">
+            </div>
+            <div>
+                <label for="quantidadeEstoque">Quantidade Estosque:</label>
+                <input type="number" name="quantidadeEstoque" id="quantidadeEstoque" class="form-control">
+            </div>
+            <div>
+                <label for="perecivel">Perecivel:</label>
+                <input type="text" name="perecivel" id="perecivel" class="form-control">
+            </div>
+            <button type="button" id="save" class="btn btn-success">Save</button>
+        </form>
+        <a href="../Product/index.html" class="btn btn-primary">Back</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="new.js"></script>
+
+</body>
+
+</html>
